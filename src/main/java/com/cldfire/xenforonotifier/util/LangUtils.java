@@ -46,6 +46,10 @@ public class LangUtils { // TODO: Clean this up, rushed it to get repo online
                 properties.load(new InputStreamReader(LangUtils.class.getResourceAsStream("/lang/" + file.getName())));
             }
             System.out.println("Loaded language " + locale.getTag());
+            if (XenForoNotifier.loginViewController != null) {
+
+                XenForoNotifier.loginViewController.initialize();
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }

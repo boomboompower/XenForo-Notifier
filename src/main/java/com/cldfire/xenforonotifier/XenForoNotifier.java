@@ -19,6 +19,7 @@ public class XenForoNotifier extends Application { // Project started April 1st,
     private Stage primaryStage;
     private BorderPane rootLayout;
     public static File APP_DIR;
+    public static LoginViewController loginViewController;
 
     public static void main(String[] args) {
         launch(args);
@@ -62,8 +63,8 @@ public class XenForoNotifier extends Application { // Project started April 1st,
             // Set the stat view into the center of root layout.
             rootLayout.setCenter(loginView);
 
-            LoginViewController controller = loader.getController();
-            controller.setXenForoNotifier(this);
+            loginViewController = loader.getController();
+            loginViewController.setXenForoNotifier(this);
 
         } catch (IOException e) {
             e.printStackTrace();
