@@ -1,0 +1,126 @@
+.root {
+    -fx-accent: #00ffec;
+}
+
+.background {
+    -fx-background-color: #151515;
+}
+
+.background-transparent {
+    -fx-background-color: transparent;
+}
+
+.rectangle {
+    -fx-background-color: red;
+}
+
+.label {
+    -fx-font-size: 11pt;
+    -fx-text-fill: white;
+    -fx-font-family: "Segoe UI";
+}
+
+.label-header {
+    -fx-font-size: 18pt;
+    -fx-font-smoothing-type: gray;
+}
+
+.label-subtle {
+    -fx-text-fill: #7c7c7c;
+}
+
+.label-accent {
+    -fx-text-fill: -fx-accent;
+}
+
+.error-label {
+    -fx-font-size: 10pt;
+    -fx-text-fill: #ff5757;
+    -fx-font-family: "Segoe UI";
+    -fx-opacity: 1;
+}
+
+.text {
+    -fx-font-smoothing-type: gray;
+}
+
+.text-input {
+    -fx-padding: 5 0 5 0;
+    -fx-border-color: transparent transparent derive(#242424,20%) transparent;
+    -fx-border-width: 1;
+    -fx-background-color: transparent;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 9.5pt;
+    -fx-text-fill: #d8d8d8;
+}
+
+.text-input:focused {
+    -fx-border-color: transparent transparent -fx-accent transparent;
+    -fx-text-fill: white;
+}
+
+.button {
+    -fx-padding: 5 8 5 8;
+    -fx-border-color: white;
+    -fx-border-width: 1.5;
+    -fx-border-radius: 5 5 5 5;
+    -fx-background-radius: 20;
+    -fx-background-color: transparent;
+    -fx-font-family: "Segoe UI";
+    -fx-font-size: 10pt;
+    -fx-text-fill: #d8d8d8;
+}
+
+.button:pressed {
+    -fx-border-width: 0.5;
+}
+
+.list-cell {
+    -fx-background: transparent;
+}
+
+.scroll-bar:vertical {
+    -fx-background-color: transparent;
+}
+
+.scroll-bar > .thumb {
+    -fx-background-color: #7c7c7c;
+    -fx-background-insets: 3, 0, 0;
+    -fx-background-radius: 2em;
+    -fx-opacity: 0.5;
+}
+
+.scroll-bar > .thumb:hover {
+    -fx-background-color: white;
+}
+
+.scroll-bar > .thumb:pressed {
+    -fx-background-color: white;
+    -fx-opacity: 0.9;
+}
+
+.increment-button, .decrement-button {
+    -fx-background-radius: 2em;
+}
+
+.track {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+    -fx-background-radius: 2em;
+    -fx-border-radius:2em;
+}
+
+.display-block {
+    -fx-background-color: transparent;
+}
+
+.display-block:hover {
+    -fx-background-color: white;
+    -fx-opacity: 0.05;
+}
+
+.display-block:pressed {
+    -fx-background-color: white;
+    -fx-opacity: 0.1;
+}

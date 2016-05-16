@@ -1,4 +1,5 @@
-window.title=XenForo Notifier
+window.title=Forum Notifier
+
 login.username=username
 login.password=password
 login.url=Forum URL
@@ -8,4 +9,8 @@ login.authCode=Code
 login.confirm=Confirm
 login.errorLabel=Invalid credentials
 login.errorLabel.authCode=Invalid code
+login.errorLabel.null=Field(s) cannot be blank
 login.errorLabel.other=An error has occurred, please try again later
+
+statview.addaccount.add=account
+statview.addaccount.cancel=cancel
